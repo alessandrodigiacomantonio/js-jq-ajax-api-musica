@@ -18,23 +18,24 @@
   <main class="main">
     <input class="main__genre" list="genre" type="text" placeholder="Filtra per Genere">
     <datalist id="genre">
-      <option value="Pop">
-      <option value="Rock">
-      <option value="Metal">
-      <option value="Jazz">
+      <option class="main__genre__option" value=" ">
+      <option class="main__genre__option" value="Pop">
+      <option class="main__genre__option" value="Rock">
+      <option class="main__genre__option" value="Metal">
+      <option class="main__genre__option" value="Jazz">
     </datalist>
-    <select name="" id="">
-      <option value="Pop">
-      <option value="Rock">
-      <option value="Metal">
-      <option value="Jazz">
-    </select>
+    <!-- <select class="main__genre">
+      <option value="Pop">Pop</option>
+      <option value="Rock">Rock</option>
+      <option value="Metal">Metal</option>
+      <option value="Jazz">Jazz</option>
+    </select> -->
     <ul id="main__albums-list">
 
     </ul>
   </main>
   <script id="album_template" type="text/x-handlebars-template">
-    <li class="album-list__item">
+    <li class="album-list__item" data-genre="{{genre}}">
       <img class="album__vinile" src="img/vinile.png" alt="Vinile"/>
       <div class="album">
         <img class="album__poster" src="{{poster}}" alt="Album Cover">

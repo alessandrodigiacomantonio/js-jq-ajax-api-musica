@@ -1,7 +1,23 @@
 $(document).ready(function() {
 
-getAllDiscs();
-
+  getAllDiscs();
+  $('.main__genre').on('focus',
+  function() {
+    $('.main__genre').on('keyup',
+    function() {
+      var input = $('.main__genre').val().toLowerCase();
+      $('.album-list__item').each(
+        function() {
+          if ( input == $(this).attr('data-genre').toLowerCase() && $(this).attr('data-genre') != " ") {
+            $('.album-list__item').addClass('dis-none');
+            $(this).removeClass('dis-none');
+          } else if ( input == " " || input.length == 0 ) {
+            $('.album-list__item').removeClass('dis-none');
+            }
+        }
+      );
+    });
+  });
 });
 
 function getAllDiscs() {

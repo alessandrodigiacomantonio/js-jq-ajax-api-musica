@@ -76,3 +76,7 @@ html {
 .album__year {
   font-size: 1.5rem;
 }
+
+.dis-none {
+  display: none;
+}
