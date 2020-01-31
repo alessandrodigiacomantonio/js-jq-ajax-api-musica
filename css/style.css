@@ -28,14 +28,36 @@ html {
   flex-wrap: wrap;
   list-style: none;
 }
-.album {
+.album-list__item {
   width: 20%;
+  margin: 3rem;
+  position: relative;
+}
+.album-list__item:hover .album__vinile {
+  transform: translate(20%,-50%);
+}
+.album-list__item:hover .album {
+  transform: translatex(-7.5%);
+}
+.album {
+  width: 100%;
+  height: 100%;
   padding: 2rem;
-  margin: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: tan;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+.album__vinile {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%,-50%);
+  width: 100%;
+  transition: 0.5s;
 }
 .album__poster {
   width: 80%;

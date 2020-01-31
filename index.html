@@ -21,12 +21,15 @@
     </ul>
   </main>
   <script id="album_template" type="text/x-handlebars-template">
-    <li class="album">
-      <img class="album__poster" src="{{poster}}" alt="Album Cover">
-      <h2 class="album__title">
-        {{title}}
-      </h2>
-      <time class="album__year">{{year}}</time>
+    <li class="album-list__item">
+      <img class="album__vinile" src="img/vinile.png" alt="Vinile"/>
+      <div class="album">
+        <img class="album__poster" src="{{poster}}" alt="Album Cover">
+        <h2 class="album__title">
+          {{title}}
+        </h2>
+        <time class="album__year">{{year}}</time>
+      </div>
     </li>
   </script>
 </body>
