@@ -10,9 +10,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- foglio di script principale -->
   <script src="js/script.js" charset="utf-8"></script>
+  <!-- foglio di stile principale -->
+  <link rel="stylesheet" href="css/style.css">
   <title>Api Musica</title>
 </head>
-<body>
+<body class="body">
+  <main class="main">
+    <ul id="main__albums-list">
 
+    </ul>
+  </main>
+  <script id="album_template" type="text/x-handlebars-template">
+    <li class="album">
+      <img class="album__poster" src="{{poster}}" alt="Album Cover">
+      <h2 class="album__title">
+        {{title}}
+      </h2>
+      <time class="album__year">{{year}}</time>
+    </li>
+  </script>
 </body>
 </html>

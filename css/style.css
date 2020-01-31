@@ -4,3 +4,47 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+html {
+  font-size: 10px;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: url("https://c.wallhere.com/photos/cb/99/guitar_simple_background_musical_instrument-1762353.jpg!d");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+}
+#main__albums-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.album {
+  width: 20%;
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: tan;
+}
+.album__poster {
+  width: 80%;
+}
+.album__title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+.album__year {
+  font-size: 1.5rem;
+}
