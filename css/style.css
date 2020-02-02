@@ -35,7 +35,7 @@ html {
   list-style: none;
 }
 .album-list__item {
-  width: 20%;
+  width: 20rem;
   margin: 3rem;
   position: relative;
 }
