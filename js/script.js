@@ -8,11 +8,17 @@ $(document).ready(function() {
       var input = $('.main__genre').val().toLowerCase();
       $('.album-list__item').each(
         function() {
-          if ( input == $(this).attr('data-genre').toLowerCase() && $(this).attr('data-genre') != " ") {
+          if ( input == $(this).attr('data-genre').toLowerCase() && input != "tutti") {
             $('.album-list__item').addClass('dis-none');
-            $(this).removeClass('dis-none');
-          } else if ( input == " " || input.length == 0 ) {
+            var selectedGenre = $(this).attr('data-genre');
+            $('.album-list__item').each(
+              function() {
+                if ( $(this).attr('data-genre') == selectedGenre) $(this).removeClass('dis-none');
+              });
+            $('.main__genre').val('');
+          } else if ( input == "tutti" || input.length == 0 ) {
             $('.album-list__item').removeClass('dis-none');
+            $('.main__genre').val('');
             }
         }
       );
