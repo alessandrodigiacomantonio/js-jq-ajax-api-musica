@@ -26,8 +26,12 @@ html {
 .main__genre {
   width: 60%;
   line-height: 5rem;
+  margin-bottom: 2rem;
+  border-radius: 5rem;
   padding-left: 2rem;
+  outline: none;
 }
+
 #main__albums-list {
   display: flex;
   justify-content: space-evenly;
